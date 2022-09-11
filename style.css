@@ -1,0 +1,252 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    box-sizing: border-box;
+    
+}
+.main-div{
+    display: flex;
+
+    
+}
+.logo{
+    display: flex;  
+    margin-left: 30px;
+    margin-top: 10px;
+    
+}
+
+.logo h1{
+    margin-top: 15px;
+    
+}
+
+.nav-div{
+    position: fixed;
+    background-color:#fefffe;
+    height: 70px;
+    width: 100%;
+     display: flex; 
+     justify-content: space-between;
+
+
+}
+.nav-div a{
+    color: black;
+    text-decoration: none;
+cursor: pointer;
+}
+.nav-div a:hover{
+    text-decoration: underline;
+    text-decoration-color: red;
+    
+}
+
+.nav_ulist ul{
+    display: flex;
+    margin-top: 20px;
+    gap: 30px;
+    margin-right: 30px;
+    font-size: 24px;
+    font-weight: 700;
+    
+    
+    
+}
+.main{
+    height: 100%;
+   
+
+}
+.nav_ulist a{
+    list-style: none;
+    text-decoration: none;
+    color: rgb(13, 13, 13);
+    
+    
+}
+
+.first-container{
+    padding: 20px;
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.second-image img{
+    margin-top: 10px;
+    margin-left: 60px;
+    width: 60%;
+}
+  /* responsive mediaQuery  only screen and (min-width: 400px)*/
+    @media  only screen  and (max-width: 600px) {
+        .nav-div{
+            width: 100%;
+            height: 90px;
+           min-width: 300px;
+        }
+        .nav_ulist{
+            gap: 5px;  
+        } 
+        .first-container{
+            min-width: 50%;
+            
+        }
+      .services-div{
+        
+      }
+        /* .second-container{
+            min-width: 300px;
+        } */
+      }
+.bt-start{
+    
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 50px;
+    border-radius: 20px;
+    width: 150px;
+    height: 40px;
+    background-color: #fdd0b7;
+    border: none;
+    cursor: pointer;
+}
+.first-heading{
+font-size: 32px;
+}
+.bt-start:hover{
+    background-color: #febe49;
+}
+.first-heading h1{
+    margin-bottom: 20px;
+}
+.first-heading{
+    padding-left: 80px;
+    width: 50%;
+}
+.first-image img{
+    margin-left: 300px;
+    width: 65%;
+}
+
+.second-container{
+    padding: 20px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.services-div{
+   
+    padding-top: 60px;
+    padding-bottom: 200px;
+    background-color: hsl(0, 100%, 98%);;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr ;
+  justify-items: center;
+  
+}
+.diploma-div{
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;;
+    border-radius: 25px;
+    padding: 20px;
+    text-align: center;
+    width: 290px;
+ background-color: white;
+ cursor: pointer;
+} 
+
+.diploma-div:hover{
+    background-color: red  ;
+}
+.ug-div{
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;;
+    border-radius: 25px;
+    padding: 20px;
+    text-align: center;
+    width: 290px;
+ background-color: white;
+}
+.pg-div{
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;;
+    border-radius: 25px;
+    padding: 20px;
+    text-align: center;
+    width: 290px;
+ background-color: white;
+} 
+.services-div img{
+    border-radius: 20px;
+    width: 250px;
+    height: 200px;
+}
+/* .black-div{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+} */
+.services-div h2{
+    align-items: center;
+}
+.service-heading{
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 20px;
+    background-color: hsl(0, 100%, 98%);;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.service-heading a{
+    text-decoration: none;
+    color:  black
+}
+footer{
+    width: 100%;
+    height: 250px;
+    background-color: rgb(238, 199, 199);
+    color: black;
+}
+.contact{
+    background-color: black;
+    width: 100%;
+    height: 120px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 62PX;
+    justify-content: center;
+}
+/*  */
+.container{
+    background-color: #016064;
+ }
+ p{
+ text-align: center;
+ }
+ .counter-main{
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
+ }
+ .data-counter{
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    font-size: 28px;
+    font-weight: 700;
+    border-radius: 700px;
+    width: 200;
+    height: 200px;
+    color: rgb(254, 254, 254);
+    padding-top: 55px;
+    text-align: center;
+    background-image: linear-gradient(to right,rgb(56, 92, 198), rgb(25, 22, 22));
+ }
+ .counter-div::after{
+    content: "+";
+ }
